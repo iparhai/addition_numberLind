@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Addition_NumberLine/precache-manifest.05b9147bbae9b45d9454aa476cedc7e5.js"
+  "/addition_numberLine/precache-manifest.2c6dd1b706ce63c204ba42d724428e0b.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Addition_NumberLine/index.html", {
+workbox.routing.registerNavigationRoute("/addition_numberLine/index.html", {
   
   blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
