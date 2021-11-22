@@ -3,6 +3,8 @@ import $ from "min-jquery";
 const queryParams = new URLSearchParams(window.location.search);
 const limit = queryParams.get('limit') ? queryParams.get('limit') : 5 ;
 const dif = queryParams.get('dif') ? queryParams.get('dif') : 'b';
+const type = queryParams.get('type') ? queryParams.get('type') : 'c'
+
 let index = 0
 let data = []
 const setData = (problem, attemptedAnswer, corectAnswer) => {
@@ -27,7 +29,6 @@ const sendData = () => {
     const sid = queryParams.get('sid');
     const uid = queryParams.get('uid');
     const id = queryParams.get('id');
-    const type = queryParams.get('type')
     // alert("limit  = " + limit)
     // alert("cid = " + cid)
     // alert("crcid = " + crcid)
@@ -54,7 +55,8 @@ export default {
     setDataTime,
     sendData,
     limit,
-    dif
+    dif,
+    type
 }
 
 
